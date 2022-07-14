@@ -20,14 +20,13 @@ public struct TestPackage {
 }
 
 // MARK: - TokenElement
-struct TokenElement: Codable {
+public struct TokenElement: Codable {
     let height, background: Background
 }
 
 // MARK: - Background
-struct Background: Codable {
+public struct Background: Codable {
     let value, type: String
 }
 
-typealias Token = [TokenElement]
-
+public typealias Token = [TokenElement]
